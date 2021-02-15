@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
@@ -7,9 +7,56 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
-  <body>
+  <body class="wrapper">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-logo">
+          <img src="" width="154" height="64" alt="Gllacy Shop logo">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="catalog.html">Каталог</a>
+            <ul class="catalog-menu">
+              <li>
+                <a class="catalog-menu-new" href="#">Новинки</a>
+              </li>
+              <li>
+                <a href="#">Сливочное</a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+        </ul>
+        <div class="user-navigation">
+          <button class="button-user-nav serch" type="button"></button>
+          <div class="serch-block">
+            <input class="serch-field" tupe="text" name="serch" placeholder="">
+          </div>
+          <button class="button-user-nav user-enterance" type="button"></button>
+          <div class="enterance-block">
+            <input class="enterance-field" type="email" name="email" placeholder="email@example.com">
+            <input class="enterance-field" type="password" name="password" placeholder="******">
+            <button class="button" type="button"></button>
+          </div>
+          <button class="button-user-nav basket" type="button"></button>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
