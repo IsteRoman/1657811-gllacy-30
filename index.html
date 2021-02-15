@@ -13,50 +13,82 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-logo">
-          <img src="" width="154" height="64" alt="Gllacy Shop logo">
+          <img src="img/Logo.svg" width="154" height="64" alt="Gllacy Shop logo">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a href="catalog.html">Каталог</a>
             <ul class="catalog-menu">
-              <li>
-                <a class="catalog-menu-new" href="#">Новинки</a>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Новинки</a>
               </li>
-              <li>
-                <a href="#">Сливочное</a>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Сливочное</a>
               </li>
-              <li>
-                <a href="#"></a>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Щербеты</a>
               </li>
-              <li>
-                <a href="#"></a>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Фруктовый лед</a>
               </li>
-              <li>
-                <a href="#"></a>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Мелорин</a>
               </li>
             </ul>
           </li>
-          <li>
-            <a href="#"></a>
+          <li class="navigation-item">
+            <a href="#">Доставка и оплата</a>
           </li>
-          <li>
-            <a href="#"></a>
+          <li class="navigation-item">
+            <a href="#">О компании</a>
           </li>
         </ul>
         <div class="user-navigation">
-          <button class="button-user-nav serch" type="button"></button>
-          <div class="serch-block">
-            <input class="serch-field" tupe="text" name="serch" placeholder="">
+          <button class="button-user-nav serch" type="button" aria-label="Кнопка поиска"></button>
+          <form class="serch-block" action="#" method="get">
+            <input class="serch-field" tupe="serch" name="serch" placeholder="Крем-брюле" aria-label="Поле поиска">
+          </form>
+          <button class="button-user-nav user-enterance" type="button">Вход</button>
+          <form class="enterance-block" action="" method="post">
+            <input class="enterance-field" type="email" name="email" placeholder="email@example.com" aria-label="Поле ввода электронной почты">
+            <input class="enterance-field" type="password" name="password" placeholder="******" aria-label="Поле ввода пароля">
+            <button class="button" type="submit">Войти</button>
+            <a class="enterance-link" href="#">Забыли пароль?</a>
+            <a class="enterance-link" href="#">Новая регистрация</a>
+          </form>
+          <button class="button-user-nav basket" type="button" aria-label="Кнопка корзина">Пусто</button>
+          <div class="basket-filling">
+            <p>Пусто</p>
           </div>
-          <button class="button-user-nav user-enterance" type="button"></button>
-          <div class="enterance-block">
-            <input class="enterance-field" type="email" name="email" placeholder="email@example.com">
-            <input class="enterance-field" type="password" name="password" placeholder="******">
-            <button class="button" type="button"></button>
-          </div>
-          <button class="button-user-nav basket" type="button"></button>
         </div>
       </nav>
+      <div class="work-time">
+        <p>с 10 до 20, ежедневно</p>
+        <a class="telephon" href="tel.88124502525">8 812 450-25-25</a>
+      </div>
     </header>
+    <main>
+      <h1 class="visuali-hidden">Gllacy Shop</h1>
+      <section class="sliders-block">
+        <h2 class="visuali-hidden"> Блок слайдеров</h2>
+        <div class="slider first-slider">
+          <p><strong class="strong">Крем-брюле и пломбир с малиновым джемом</strong></p>
+          <a class="button">Давайте оба!</a>
+        </div>
+        <div class="slider second-slider">
+          <p><strong class="strong">Шоколадный пломбир и лимонный сорбет</strong></p>
+          <a class="button">Давайте оба!</a>
+        </div>
+        <div class="slider third-slider">
+          <p><strong class="strong">Пломбир с помадкой и клубничный щербет</strong></p>
+          <a class="button">Давайте оба!</a>
+        </div>
+        <div class="slider-buttons">
+          <button class="slider-button first" type="button" aria-label="Первый слайд"></button>
+          <button class="slider-button second" type="button" aria-label="Второй слайд"></button>
+          <button class="slider-button third" type="button" aria-label="Третий слайд"></button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
