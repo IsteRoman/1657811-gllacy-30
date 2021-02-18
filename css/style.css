@@ -112,6 +112,8 @@ img {
   background: var(--button);
   border-radius: 26px;
   box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  cursor: pointer;
+  outline: 0;
 }
 
 .button:hover,
@@ -229,6 +231,7 @@ img {
   position: absolute;
   top: 45px;
   left: -7px;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   width: max-content;
@@ -352,6 +355,7 @@ img {
   position: absolute;
   top: 35px;
   left: -310px;
+  z-index: 1;
   padding: 20px 15px;
   background-color: var(--basic-form-bg);
   border-radius: 4px;
@@ -511,6 +515,7 @@ img {
 .serch-field {
   width: 311px;
   height: 44px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .enterance-field {
@@ -553,4 +558,269 @@ img {
   color: var(--basic-red);
   border: 1px solid var(--basic-red);
   box-shadow: inset 0 0 0 1px var(--basic-red);
+}
+
+
+
+
+
+
+
+
+
+.slider{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  outline: 5px solid rgba(0, 0, 0, 0.7);
+}
+
+.slider p {
+  padding: 0;
+  margin: 0;
+  margin-top: 325px;
+  margin-bottom: 27px;
+}
+
+.button-in-slide {
+  min-width: 261px;
+  min-height: 62px;
+  font-size: 32px;
+  line-height: 1.375;
+  letter-spacing: 0.05em;
+  margin-bottom: 61px;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+
+
+
+
+.special-offers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.special {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 560px;
+  min-height: 229px;
+  margin: 0;
+  padding: 16px 30px 22px 16px;
+  border-radius: 16px;
+}
+
+.raspberries {
+  background: url(../img/Малиновый-фон.png) 0 0 no-repeat;
+}
+
+.chocolate {
+  background: url(../img/Шоколадный-фон.png) 0 0 no-repeat;
+}
+
+.special-title {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  font-size: 35px;
+  line-height: 1.17;
+  font-weight: 700;
+}
+
+.special-text {
+  margin: 0;
+  margin-bottom: 42px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.22;
+  font-weight: 700;
+}
+
+.special .button {
+  align-self: flex-end;
+  padding: 15px 22px 16px 22px;
+}
+
+.hits {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.ice-cream-card {
+  position: relative;
+  width: 267px;
+  margin-right: 26px;
+}
+
+.ice-cream-card:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.ice-cream-image {
+  width: 267px;
+  height: 267px;
+  object-fit: contain;
+  clip-path: circle(49%);
+}
+
+.xit-logo {
+  position: relative;
+}
+
+.xit-logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 61px;
+  height: 61px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+}
+
+.xit-logo::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  z-index: 1;
+  width: 61px;
+  height: 61px;
+  background: url(../img/ХИТ.svg) 0 0 no-repeat;
+}
+
+.price {
+  position: absolute;
+  top: 200px;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.sub {
+  font-size: 30px;
+  line-height: 1.16;
+}
+
+.ice-cream-card-title {
+  display: inline-flex;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.375;
+  font-weight: 500;
+  color: var(--basic-white);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.about {
+  margin-bottom: 40px;
+  padding: 24px 23px 3px 20px;
+  line-height: 1.375;
+  color: var(--basic-dark);
+  background: url(../img/Вафляпаттерн.png) 0 0 repeat;
+  border-radius: 16px;
+}
+
+.about-title {
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.about-advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.advantages {
+  position: relative;
+  width: 540px;
+  margin: 0;
+  margin-bottom: 33px;
+  padding-top: 10px;
+  padding-left: 55px;
+}
+
+.ice {
+  background: url(../img/Мороженое.svg) left top no-repeat;
+}
+
+.moo {
+  background: url(../img/Корова.svg) left top no-repeat;
+}
+
+.natural {
+  background: url(../img/Листик.svg) left top no-repeat;
+}
+
+.temperature {
+  background: url(../img/Градусник.svg) left top no-repeat;
+}
+
+
+
+.first- {
+
+  top: -11%;
+  left: 19.5%;
+  z-index: -2;
+  width: 716px;
+  height: 716px;
+  border-radius: 50%;
+  background: rgba(215, 242, 227, 0.75) 0 0 no-repeat;
+  filter: blur(250px);
+  outline: 5px solid rgba(255, 255, 0, 0.7);
+
+}
+.slider-background {
+  position: absolute;
+  top: -10%;
+  left: 19.5%;
+  z-index: -1;
+  width: 716px;
+  height: 716px;
+  background: url(../img/Мороженко1.png) 35px 83px no-repeat,
+  url(../img/Мороженко2.png) 349px 126px no-repeat,
+  radial-gradient(circle, rgba(215,242,227,0.75) 0%, rgba(215,242,227,0) 100%);
+
+  outline: 5px solid rgba(0, 0, 0, 0.7);
+}
+.bl {
+  display: block;
+z-index: -2;
+  width: 716px;
+  height: 716px;
+  background: url(../img/Мороженко1.png) 35px 83px no-repeat,
+  url(../img/Мороженко2.png) 349px 126px no-repeat;
+  border-radius: 50%;
+  background: rgb(215, 242, 227, 0.75) 0 0 no-repeat;
+  opacity: 75%;
+  backdrop-filter: blur(250px);
+
+}
+.first {
+
+  border-radius: 50%;
+  background: rgba(215, 242, 227, 0.75) 0 0 no-repeat;
+  filter: blur(250px);
 }
