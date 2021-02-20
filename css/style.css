@@ -615,13 +615,9 @@ img {
   color: var(--basic-white);
 }
 
-
-
-
-
-
-
-
+.sliders-block{
+  position: relative;
+}
 
 .slider{
   position: relative;
@@ -633,7 +629,44 @@ img {
   line-height: 1;
   font-weight: 700;
   text-align: center;
-  outline: 5px solid rgba(0, 0, 0, 0.7);
+}
+
+.slider-image-block {
+  position: absolute;
+  z-index: -1;
+  top: -12%;
+  left: 19%;
+}
+
+.slider-image {
+  position: relative;
+  display: block;
+}
+
+.first-slider-block::before,
+.second-slider-block::before,
+.third-slider-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 716px;
+  height: 716px;
+  filter: blur(250px);
+  border-radius: 50%;
+}
+
+.first-slider-block::before {
+  background-color: rgba(215, 242, 227, 0.75);
+}
+
+.second-slider-block::before {
+  background-color: rgba(218, 228, 239, 0.75);
+}
+
+.third-slider-block::before {
+  background-color: rgba(239, 224, 218, 0.75);
 }
 
 .slider p {
@@ -649,13 +682,44 @@ img {
   font-size: 32px;
   line-height: 1.375;
   letter-spacing: 0.05em;
-  margin-bottom: 61px;
+  margin-bottom: 50px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
+.slider-buttons {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  top: 491px;
+  left: 28px;
+  min-width: 79px;
+  height: 21px;
+}
 
+.slider-button {
+  position: relative;
+  width: 21px;
+  height: 21px;
+  margin-right: 8px;
+  padding: 0;
+  background: none;
+  border:  2px solid var(--basic-white);
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+}
 
-
+.slider-button-active::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 21px;
+  height: 21px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  transition: var(--default-transition);
+}
 
 .special-offers {
   display: flex;
@@ -1232,57 +1296,3 @@ img {
   background: rgba(0, 0, 0, 0.3);
   z-index: 3;
 }
-
-
-
-.first- {
-
-  top: -11%;
-  left: 19.5%;
-  z-index: -2;
-  width: 716px;
-  height: 716px;
-  border-radius: 50%;
-  background: rgba(215, 242, 227, 0.75) 0 0 no-repeat;
-  filter: blur(250px);
-  outline: 5px solid rgba(255, 255, 0, 0.7);
-
-}
-.slider-background {
-  position: absolute;
-  top: -10%;
-  left: 19.5%;
-  z-index: -1;
-  width: 716px;
-  height: 716px;
-  background: url(../img/Мороженко1.png) 35px 83px no-repeat,
-  url(../img/Мороженко2.png) 349px 126px no-repeat,
-  radial-gradient(circle, rgba(215,242,227,0.75) 0%, rgba(215,242,227,0) 100%);
-
-  outline: 5px solid rgba(0, 0, 0, 0.7);
-}
-.bl {
-  display: block;
-z-index: -2;
-  width: 716px;
-  height: 716px;
-  background: url(../img/Мороженко1.png) 35px 83px no-repeat,
-  url(../img/Мороженко2.png) 349px 126px no-repeat;
-  border-radius: 50%;
-  background: rgb(215, 242, 227, 0.75) 0 0 no-repeat;
-  opacity: 75%;
-  backdrop-filter: blur(250px);
-
-}
-.first {
-
-  border-radius: 50%;
-  background: rgba(215, 242, 227, 0.75) 0 0 no-repeat;
-  filter: blur(250px);
-}
-
-
-
-
-
-
