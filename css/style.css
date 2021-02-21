@@ -25,8 +25,29 @@
     opacity: 0;
     pointer-events: none;
   }
+
+  50% {
+    top: -500px;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
   100% {
     top: 37px;
+    opacity: 1;
+    pointer-events: initial;
+  }
+}
+
+@keyframes outgoing {
+  0% {
+    left: -1000px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  100% {
+    left: -13px;
     opacity: 1;
     pointer-events: initial;
   }
@@ -303,7 +324,6 @@ img {
   animation-name: dropping-out;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
-  top: 37px;
 
 }
 
@@ -501,7 +521,6 @@ img {
   animation-name: dropping-out;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
-  top: 37px;
 }
 
 .enterance-block {
@@ -582,7 +601,6 @@ img {
   animation-name: dropping-out;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
-  top: 37px;
 }
 
 .basket-block {
@@ -637,7 +655,6 @@ img {
   animation-name: dropping-out;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
-  top: 37px;
 }
 
 .search-block:hover,
@@ -860,8 +877,9 @@ img {
 
 .good-card:hover .good-card-buy,
 .good-card:focus .good-card-buy {
-  transform: translateX(0);
-  opacity: 1;
+  animation-name: outgoing;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
 }
 
 .good-image {
@@ -926,7 +944,6 @@ img {
 .good-card-buy {
   position: absolute;
   top: -6px;
-  left: -13px;
   width: 293px;
   min-height: 402px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -934,7 +951,6 @@ img {
   opacity: 0;
   border-radius: 4px;
   transition: var(--default-transition);
-  transform: translateX(-1000%);
 }
 
 .good-button {
