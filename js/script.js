@@ -21,7 +21,7 @@ if (sliders_block) {
   }
   const sliders_clear = function() {
     for (let i = 0; i<sliders.length; i++) {
-      sliders[i].classList.add('visually-hidden');
+      sliders[i].classList.add('element-hidden');
     }
   }
   const button_clear = function() {
@@ -33,7 +33,7 @@ if (sliders_block) {
     background_clear();
     sliders_clear();
     button_clear();
-    first_slide.classList.remove('visually-hidden');
+    first_slide.classList.remove('element-hidden');
     first.classList.add('slider-button-active');
     page_background.classList.add('background-color-first');
   });
@@ -41,7 +41,7 @@ if (sliders_block) {
     background_clear();
     sliders_clear();
     button_clear();
-    second_slide.classList.remove('visually-hidden');
+    second_slide.classList.remove('element-hidden');
     second.classList.add('slider-button-active');
     page_background.classList.add('background-color-second');
   });
@@ -49,7 +49,7 @@ if (sliders_block) {
     background_clear();
     sliders_clear();
     button_clear();
-    third_slide.classList.remove('visually-hidden');
+    third_slide.classList.remove('element-hidden');
     third.classList.add('slider-button-active');
     page_background.classList.add('background-color-third');
   });
@@ -57,12 +57,12 @@ if (sliders_block) {
 
 if (modal_form) {
   open_form.addEventListener('click', function() {
-    modal_form.classList.remove('visually-hidden');
-    overlay_block.classList.remove('visually-hidden');
+    modal_form.classList.remove('element-hidden');
+    overlay_block.classList.remove('element-hidden');
   });
 
   close_form.addEventListener('click', function() {
-    modal_form.classList.add('visually-hidden');
-    overlay_block.classList.add('visually-hidden');
+    modal_form.classList.add('element-hidden');
+    overlay_block.classList.add('element-hidden');
   });
 }

@@ -265,6 +265,7 @@ img {
 }
 
 .main-logo {
+  flex-shrink: 0;
   width: 154px;
   height: 64px;
   opacity: 100%;
@@ -1039,7 +1040,6 @@ img {
   width: 267px;
   height: 267px;
   object-fit: contain;
-  clip-path: circle(49%);
 }
 
 .hit-logo {
@@ -1084,18 +1084,18 @@ img {
 }
 
 .good-card-title {
-  margin: 0;
+  display: inline-block;
   text-align: center;
+  vertical-align: middle;
+  margin: 0;
   font-size: 16px;
   line-height: 1.375;
   font-weight: 500;
-  color: var(--basic-white);
-  text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
 .good-card-buy {
   position: absolute;
+  z-index: -1;
   top: -6px;
   width: 293px;
   min-height: 402px;
@@ -1221,7 +1221,7 @@ img {
   align-items: flex-start;
   padding: 27px 20px 35px 20px;
   width: 548px;
-  min-height: 210px;
+  min-height: 100%;
   border-radius: 16px;
   color: #5a5a5a;
   background-color: #f8f7f4;
@@ -1449,6 +1449,7 @@ img {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
 .modal-input {
   width: 267px;
   height: 44px;
@@ -1529,4 +1530,8 @@ img {
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
   z-index: 3;
+}
+
+.element-hidden {
+  display: none;
 }
