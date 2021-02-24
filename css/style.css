@@ -959,7 +959,7 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .special {
@@ -969,18 +969,20 @@ img {
   align-items: flex-start;
   flex-wrap: wrap;
   width: 560px;
-  height: 229px;
   margin: 0;
+  margin-bottom: 10px;
   padding: 16px 22px 22px 16px;
   border-radius: 16px;
 }
 
 .raspberries {
   background: url(../img/background-raspberries.png) 0 0 no-repeat;
+  background-size: 100% 100%;
 }
 
 .chocolate {
   background: url(../img/background-chocolate.png) 0 0 no-repeat;
+  background-size: 100% 100%;
 }
 
 .special-title {
@@ -1087,10 +1089,12 @@ img {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
+  max-height: 50px;
   margin: 0;
   font-size: 16px;
   line-height: 1.375;
   font-weight: 500;
+  overflow-y: auto;
 }
 
 .good-card-buy {
@@ -1167,13 +1171,14 @@ img {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .blog {
   width: 560px;
   min-height: 220px;
   margin-right: 26px;
+  margin-bottom: 10px;
   border-radius: 16px;
   padding:20px 20px 35px 20px;
 }
@@ -1191,6 +1196,7 @@ img {
   color: var(--basic-dark);
   background-color: var(--basic-white);
   background: url(../img/background-strawberry.png) 0 0 no-repeat;
+  background-size: 100% 100%;
 }
 
 .blog-news p {
@@ -1212,6 +1218,7 @@ img {
 .post {
   padding: 5px 6px;
   background: url(../img/background-post.png) 0 0 no-repeat;
+  background-size: 100% 100%;
 }
 
 .submit {
@@ -1256,8 +1263,11 @@ img {
 }
 
 .map {
+  display: inline-block;
+  vertical-align: bottom;
   width: 100%;
   height: 430px;
+  object-fit: cover;
 }
 
 .contacts {
