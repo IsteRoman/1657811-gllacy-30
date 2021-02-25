@@ -112,20 +112,7 @@
         <a class="telephon" href="tel:88124502525">8 812 450-25-25</a>
       </div>
     </header>
-
-
-
-
-
-
-
-    <main>
-
-
-
-
-
-
+    <main class="main-catalog">
       <section class="sub-header wrapper">
         <ul class="bread-crumbs">
           <li class="bread-crumbs-item">
@@ -140,54 +127,48 @@
         </ul>
         <h1 class="page-title">Cливочное мороженое</h1>
       </section>
-
-
-
-
-
-
-
       <section class="wrapper">
+        <h2 class="visually-hidden">Блок фильтров каталога</h2>
         <form class="goods-filter">
           <fieldset class="fieldset">
-            <legend class=""></legend>
-            <label class="goods-filter-label" for="sorting">Сортировка:</label>
-            <select class="" name="sorting-select" id="sorting">
-              <option class="sorting-select-object" selected>по популярности</option>
-              <option class="sorting-select-object">сначала недорогие</option>
-              <option class="sorting-select-object">сначала дорогие</option>
-              <option class="sorting-select-object">по жирности</option>
-            </select>
+            <legend class="legend">Сортировка:</legend>
+            <div class="select-arrow">
+              <select class="select" name="sorting-select">
+                <option class="sorting-select-object" selected>по популярности</option>
+                <option class="sorting-select-object">сначала недорогие</option>
+                <option class="sorting-select-object">сначала дорогие</option>
+                <option class="sorting-select-object">по жирности</option>
+              </select>
+            </div>
           </fieldset>
-
-
-
-
-
           <fieldset class="fieldset">
-            <legend class=""></legend>
-            <label class="goods-filter-label" for="min-price"></label>
+            <legend class="legend">Цена: <span class="range-filter-price-min">100</span> &#8381;<span></span> - <span class="range-filter-price-max">500</span><span> &#8381;</span></legend>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 62%; margin-left: 7%"></div>
+                </div>
+                <div class="toggle min-toggle" tabindex="0" style="left: 7%"></div>
+                <div class="toggle max-toggle" tabindex="0" style="left: 62%"></div>
+              </div>
           </fieldset>
-
-
           <fieldset class="fieldset">
-            <legend class=""></legend>
-            <ul class="">
-              <li class="">
-                <input class="" type="radio" name="" value="" id="">
-                <label class="" for="">0%</label>
+            <legend class="legend">Жирность:</legend>
+            <ul class="radio-buttons">
+              <li class="radio">
+                <input class="rad" type="radio" name="fat-content" value="0%" id="fat-content-0">
+                <label class="radio-label" for="fat-content-0">0%</label>
               </li>
-              <li class="">
-                <input class="" type="radio" name="" value="" id="" checked>
-                <label class="" for="">до 10%</label>
+              <li class="radio">
+                <input class="rad" type="radio" name="fat-content" value="меньше 10%" id="fat-content-10" checked>
+                <label class="radio-label" for="fat-content-10">до 10%</label>
               </li>
-              <li class="">
-                <input class="" type="radio" name="" value="" id="">
-                <label class="" for="">до 30%</label>
+              <li class="radio">
+                <input class="rad" type="radio" name="fat-content" value="меньше 30%" id="fat-content-30">
+                <label class="radio-label" for="fat-content-30">до 30%</label>
               </li>
-              <li class="">
-                <input class="" type="radio" name="" value="" id="">
-                <label class="" for="">выше 30%</label>
+              <li class="radio">
+                <input class="rad" type="radio" name="fat-content" value="больше 30%" id="fat-content+30">
+                <label class="radio-label" for="fat-content+30">выше 30%</label>
               </li>
             </ul>
           </fieldset>
@@ -198,7 +179,7 @@
 
 
           <fieldset class="fieldset">
-            <legend class=""></legend>
+            <legend class="legend">Наполнители:</legend>
             <ul class="">
               <li class="">
                 <input class="" type="checkbox" name="" id="" checked>
