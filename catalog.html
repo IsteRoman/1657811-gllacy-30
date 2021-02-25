@@ -127,9 +127,9 @@
         </ul>
         <h1 class="page-title">Cливочное мороженое</h1>
       </section>
-      <section class="wrapper">
+      <section class="filter-block wrapper">
         <h2 class="visually-hidden">Блок фильтров каталога</h2>
-        <form class="goods-filter">
+        <form class="goods-filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="fieldset">
             <legend class="legend">Сортировка:</legend>
             <div class="select-arrow">
@@ -172,53 +172,34 @@
               </li>
             </ul>
           </fieldset>
-
-
-
-
-
-
           <fieldset class="fieldset">
             <legend class="legend">Наполнители:</legend>
-            <ul class="">
-              <li class="">
-                <input class="" type="checkbox" name="" id="" checked>
-                <label class="" for="">шоколадные</label>
+            <ul class="checkbox-button">
+              <li class="checkbox">
+                <input class="check" type="checkbox" name="check-chocolate" id="chocolate" checked>
+                <label class="checkbox-label" for="chocolate">шоколадные</label>
               </li>
-              <li class="">
-                <input class="" type="checkbox" name="" id="" checked>
-                <label class="" for="">сахарные присыпки</label>
+              <li class="checkbox">
+                <input class="check" type="checkbox" name="check-sugar-topping" id="sugar-topping" checked>
+                <label class="checkbox-label" for="sugar-topping">сахарные присыпки</label>
               </li>
-              <li class="">
-                <input class="" type="checkbox" name="" id="">
-                <label class="" for="">фрукты</label>
+              <li class="checkbox">
+                <input class="check" type="checkbox" name="check-fruit" id="fruit">
+                <label class="checkbox-label" for="fruit">фрукты</label>
               </li>
-              <li class="">
-                <input class="" type="checkbox" name="" id="">
-                <label class="" for="">сиропы</label>
+              <li class="checkbox">
+                <input class="check" type="checkbox" name="check-syrup" id="syrup">
+                <label class="checkbox-label" for="syrup">сиропы</label>
               </li>
-              <li class="">
-                <input class="" type="checkbox" name="" id="">
-                <label class="" for="">джемы</label>
+              <li class="checkbox">
+                <input class="check" type="checkbox" name="check-jam" id="jam">
+                <label class="checkbox-label" for="jam">джемы</label>
               </li>
             </ul>
           </fieldset>
-
-
-          <button class="" type="submit">Применить</button>
-
-
-
+          <button class="catalog-form-button" type="submit">Применить</button>
         </form>
       </section>
-
-
-
-
-
-
-
-
       <section class="goods wrapper">
         <h2 class="visually-hidden">Виды сливочного мороженого</h2>
         <div class="good-card">
@@ -317,31 +298,15 @@
             <a class="button good-button" href="#">Быстрый просмотр</a>
           </div>
         </div>
-
-
-
       </section>
-
-
-
-
-
-
-
-
-
-
-      <section class="map-block">
-        <h2 class="visually-hidden">Блок контактной информации</h2>
-        <img class="map" src="img/map-and-marker.png" width="1200" height="430" alt="Карта с адресом ул. Большая Конюшенная, 19/8, Санкт-Петербург">
-        <div class="contacts">
-          <p class="contacts-text">Адрес главного офиса и&nbsp;офлайн-магазина:</p>
-          <address class="contacts-address">ул. Большая Конюшенная, 19/8, Санкт-Петербург</address>
-          <p class="contacts-text">Для заказов по телефону:</p>
-          <a class="telephon-contact" href="tel:88124502525">8 812 450-25-25</a>
-          <p class="contacts-text">(с 10 до 20 ежедневно)</p>
-          <a class="button button-open-modal" href="#">Форма обратной связи</a>
-        </div>
+      <section class="pagination-block wrapper">
+        <button class="pagination-button-arrow arrow-back" type="button" disabled></button>
+        <a class="pagination-button-number pagination-active">1</a>
+        <a class="pagination-button-number" href="#">2</a>
+        <a class="pagination-button-number" href="#">3</a>
+        <a class="pagination-button-number" href="#">4</a>
+        <a class="pagination-button-number" href="#">5</a>
+        <button class="pagination-button-arrow arrow-forward" type="button"></button>
       </section>
     </main>
     <footer class="main-footer wrapper">
@@ -385,20 +350,5 @@
         <p class="developer-text">Сделано в <span class="link-style-dabg">HTML Academy</span> © 2019</p>
       </div>
     </footer>
-    <div class="modal element-hidden">
-      <h2 class="modal-title">Мы обязательно вам ответим!</h2>
-      <form class="modal-form" actiom="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="modal-user-name">введите ваши имя и фамилию</label>
-        <input class="field-style modal-input" id="modal-user-name" type="text" name="modal-user-name" placeholder="Имя Фамилия">
-        <label class="visually-hidden" for="modal-user-email">введите ваш емаил</label>
-        <input class="field-style modal-input" id="modal-user-email" type="email" name="modal-user-email" placeholder="email@example.com">
-        <label class="visually-hidden" for="modal-user-review">введите текск вашего обращения</label>
-        <textarea class="field-style modal-textarea" id="modal-user-review" rows="6" name="review" placeholder="В свободной форме"></textarea>
-        <button class="button modal-button" type="submit">Отправить</button>
-      </form>
-      <button class="close" type="button" aria-label="Закрыть">Закрыть</button>
-    </div>
-    <div class="overlay element-hidden"></div>
-    <script src="js/script.js"></script>
   </body>
 </html>
