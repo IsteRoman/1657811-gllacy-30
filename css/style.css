@@ -1894,6 +1894,7 @@ img {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  max-width: 230px;
 }
 
 .social {
