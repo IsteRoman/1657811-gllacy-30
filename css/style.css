@@ -416,7 +416,7 @@ img {
 }
 
 .navigation-item:hover .catalog-menu,
-.navigation-item:focus .catalog-menu {
+.navigation-item:focus-within .catalog-menu {
   animation-name: dropping-out-menu;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
@@ -623,7 +623,7 @@ img {
 }
 
 .search-block:hover .search-form,
-.search-block:focus .search-form {
+.search-block:focus-within .search-form {
   animation-name: dropping-out-menu;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
@@ -701,7 +701,7 @@ img {
 }
 
 .enterance-block:hover .enterance-form,
-.enterance-block:focus .enterance-form {
+.enterance-block:focus-within .enterance-form {
   animation-name: dropping-out-menu;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
@@ -764,7 +764,7 @@ img {
 }
 
 .basket-block:hover .basket-filling,
-.basket-block:focus .basket-filling {
+.basket-block:focus-within .basket-filling {
   animation-name: dropping-out-menu;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
@@ -1124,12 +1124,12 @@ img {
 }
 
 .good-card:hover,
-.good-card:focus {
+.good-card:focus-within {
   z-index: 2;
 }
 
 .good-card:hover .good-card-buy,
-.good-card:focus .good-card-buy {
+.good-card:focus-within .good-card-buy {
   animation-name: good-outgoing;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
