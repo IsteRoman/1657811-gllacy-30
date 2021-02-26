@@ -475,6 +475,7 @@ img {
   padding: 8px 20px 9px 21px;
   color: var(--basic-dark);
   transition: var(--default-transition);
+  outline: 0;
 }
 
 .catalog-menu-item:first-of-type {
@@ -567,6 +568,7 @@ img {
   font-weight: 500;
   color: inherit;
   border: none;
+  outline: 0;
 }
 
 .search-block {
@@ -932,6 +934,7 @@ img {
   line-height: 1.09;
   font-weight: 700;
   color: var(--basic-white);
+  outline: 0;
 }
 
 .sliders-block {
@@ -1117,6 +1120,7 @@ img {
   margin-right: 26px;
   margin-bottom: 40px;
   transition: var(--default-transition);
+  outline: 0;
 }
 
 .good-card:nth-of-type(4n) {
@@ -1522,6 +1526,7 @@ img {
   border-radius: 50%;
   box-shadow: 0px 2px 1px var(--shadow-toggle);
   cursor: pointer;
+  outline: 0;
 }
 
 .max-toggle {
@@ -1556,6 +1561,7 @@ img {
   line-height: 1.125;
   font-weight: 500;
   cursor: pointer;
+  outline: 0;
 }
 
 .radio-label::before {
@@ -1635,6 +1641,7 @@ img {
   line-height: 1.125;
   font-weight: 500;
   cursor: pointer;
+  outline: 0;
 }
 
 .checkbox-label::before {
@@ -1891,6 +1898,7 @@ img {
 
 .social {
   margin-right: 8px;
+  outline: 0;
 }
 
 .social:last-of-type {
@@ -1907,7 +1915,7 @@ img {
 }
 
 .social-ico:hover,
-.social-ico:focus {
+.social-ico:focus-within {
   border: 2px solid var(--bacground-white-0-5);
   fill: var(--basic-white);
 }
@@ -1973,6 +1981,7 @@ img {
   height: 39px;
   opacity: 1;
   transition: var(--default-transition);
+  outline: 0;
 }
 
 .HTMLAcademy-logo:hover,
@@ -2130,4 +2139,3 @@ img {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-
