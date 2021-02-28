@@ -253,18 +253,18 @@
   --basic-dark-light: #5a5a5a;
   --basic-input-border: rgba(178, 178, 178, 0.52);
   --basic-input-border-focus: rgba(46, 136, 228, 0.52);
-  --basic-form-bg: #f8f7f4;
+  --basic-form-bacground: #f8f7f4;
   --basket-price: #ababab;
   --placeholder: #999999;
-  --raspberries-bg: rgb(145, 2, 32);
-  --chocolate-bg: rgb(128, 78, 53);
+  --raspberries-bacground: rgb(145, 2, 32);
+  --chocolate-bacground: rgb(128, 78, 53);
   --close: #231f20;
   --catalog-menu-hover-focus: #fbded7;
   --catalog-menu-active: #f6b5a5;
   --catalog-menu-on-page: #d07058;
-  --dabg-color: #ffbc9e;
-  --whbg-color: #e84d37;
-  --bg-contacts: #fefefe;
+  --dark-bacground-color: #ffbc9e;
+  --white-bacground-color: #e84d37;
+  --bacground-contacts: #fefefe;
   --bacground-color-1: #849d8f;
   --bacground-color-2: #8996a6;
   --bacground-color-3: #9d8b84;
@@ -291,8 +291,8 @@
   --shadow-price: rgba(49, 50, 53, 0.5);
   --line: rgba(50, 50, 50, 0.2);
   --line-0-3: rgba(50, 50, 50, 0.3);
-  --line-dabg: rgba(255, 188, 158, 0.3);
-  --line-whbg: rgba(232, 77, 55, 0.3);
+  --line-dark-bacground: rgba(255, 188, 158, 0.3);
+  --line-white-bacground: rgba(232, 77, 55, 0.3);
   --line-basket: #cacac7;
   --button: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
   --button-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
@@ -398,7 +398,7 @@ img {
           box-shadow: inset 0px 2px 2px var(--shadow-button-active);
 }
 
-.link-style-dabg {
+.link-style-dark-bacground {
   color: var(--basic-white);
   text-decoration: underline;
   -webkit-text-decoration-color: var(--bacground-white-0-3);
@@ -410,16 +410,16 @@ img {
   outline: 0;
 }
 
-.link-style-dabg:hover,
-.link-style-dabg:focus,
-.link-style-dabg:active {
-  color: var(--dabg-color);
+.link-style-dark-bacground:hover,
+.link-style-dark-bacground:focus,
+.link-style-dark-bacground:active {
+  color: var(--dark-bacground-color);
   text-decoration: underline;
-  -webkit-text-decoration-color: var(--line-dabg);
-          text-decoration-color: var(--line-dabg);
+  -webkit-text-decoration-color: var(--line-dark-bacground);
+          text-decoration-color: var(--line-dark-bacground);
 }
 
-.link-style-whbg {
+.link-style-white-bacground {
   color: var(--basic-dark);
   text-decoration: underline;
   -webkit-text-decoration-color: var(--line-0-3);
@@ -431,13 +431,13 @@ img {
   outline: 0;
 }
 
-.link-style-whbg:hover,
-.link-style-whbg:focus,
-.link-style-whbg:active {
-  color: var(--whbg-color);
+.link-style-white-bacground:hover,
+.link-style-white-bacground:focus,
+.link-style-white-bacground:active {
+  color: var(--white-bacground-color);
   text-decoration: underline;
-  -webkit-text-decoration-color: var(--line-whbg);
-          text-decoration-color: var(--line-whbg);
+  -webkit-text-decoration-color: var(--line-white-bacground);
+          text-decoration-color: var(--line-white-bacground);
 }
 
 .field-style {
@@ -807,7 +807,7 @@ img {
 }
 
 .search-block,
-.enterance-block,
+.entrance-block,
 .basket-block {
   position: relative;
   display: -webkit-box;
@@ -874,7 +874,7 @@ img {
   left: -310px;
   z-index: 2;
   padding: 20px 15px;
-  background-color: var(--basic-form-bg);
+  background-color: var(--basic-form-bacground);
   border-radius: 4px;
   -webkit-box-shadow: var(--shadow-basic);
           box-shadow: var(--shadow-basic);
@@ -928,14 +928,14 @@ img {
   fill: var(--basic-white);
 }
 
-.enterance-block:hover .enterance,
-.enterance-block:focus-within .enterance {
+.entrance-block:hover .enterance,
+.entrance-block:focus-within .enterance {
   color: var(--basic-dark);
   background-color: var(--basic-white);
 }
 
-.enterance-block:hover .enterance-ico,
-.enterance-block:focus-within .enterance-ico {
+.entrance-block:hover .enterance-ico,
+.entrance-block:focus-within .enterance-ico {
   fill: var(--basic-dark);
 }
 
@@ -945,7 +945,7 @@ img {
   left: -185px;
   z-index: 2;
   padding: 20px 17px 22px 19px;
-  background-color: var(--basic-form-bg);
+  background-color: var(--basic-form-bacground);
   border-radius: 4px;
   -webkit-box-shadow: var(--shadow-basic);
           box-shadow: var(--shadow-basic);
@@ -1002,8 +1002,8 @@ img {
   margin-bottom: 20px;
 }
 
-.enterance-block:hover .enterance-form,
-.enterance-block:focus-within .enterance-form {
+.entrance-block:hover .enterance-form,
+.entrance-block:focus-within .enterance-form {
   -webkit-animation-name: dropping-out-menu;
           animation-name: dropping-out-menu;
   -webkit-animation-duration: 0.3s;
@@ -1070,7 +1070,7 @@ img {
   width: 539px;
   padding: 13px 14px 21px 25px;
   color: var(--basic-dark);
-  background-color: var(--basic-form-bg);
+  background-color: var(--basic-form-bacground);
   border-radius: 4px;
   -webkit-box-shadow: var(--shadow-basic);
           box-shadow: var(--shadow-basic);
@@ -1463,13 +1463,13 @@ img {
 .raspberries {
   background: url(../img/background-raspberries.png) 0 0 no-repeat;
   background-size: cover;
-  background-color: var(--raspberries-bg);
+  background-color: var(--raspberries-bacground);
 }
 
 .chocolate {
   background: url(../img/background-chocolate.png) 0 0 no-repeat;
   background-size: cover;
-  background-color: var(--chocolate-bg);
+  background-color: var(--chocolate-bacground);
 }
 
 .special-title {
@@ -1797,7 +1797,7 @@ img {
   min-height: 100%;
   padding: 27px 20px 35px 20px;
   color: var(--basic-dark-light);
-  background-color: var(--basic-form-bg);
+  background-color: var(--basic-form-bacground);
   border-radius: 16px;
 }
 
@@ -2443,7 +2443,7 @@ img {
   min-height: 306px;
   padding: 32px 25px 31px 25px;
   color: var(--basic-dark);
-  background-color: var(--bg-contacts);
+  background-color: var(--bacground-contacts);
   border-radius: 16px;
 }
 
@@ -2457,7 +2457,7 @@ img {
 }
 
 .contacts-address,
-.telephon-contact {
+.phone-contact {
   font-size: 18px;
   line-height: 1.333;
   font-style: normal;
@@ -2470,7 +2470,7 @@ img {
   margin-bottom: 25px;
 }
 
-.telephon-contact {
+.phone-contact {
   margin-top: 11px;
   margin-bottom: 0;
 }
@@ -2658,7 +2658,7 @@ img {
   min-height: 441px;
   padding: 15px 25px 0 25px;
   color: var(--basic-dark);
-  background-color: var(--basic-form-bg);
+  background-color: var(--basic-form-bacground);
   border-radius: 6px;
 }
 
