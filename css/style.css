@@ -1047,6 +1047,7 @@ img {
   font-size: 32px;
   line-height: 1.375;
   letter-spacing: 0.05em;
+  border-radius: 70px;
   transition: var(--default-transition);
 }
 
@@ -1921,6 +1922,7 @@ img {
 }
 
 .map-block {
+  position: relative;
   width: 100%;
 }
 
@@ -1930,6 +1932,13 @@ img {
   width: 100%;
   height: 430px;
   object-fit: cover;
+}
+
+.inter-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .wrapper-b {
